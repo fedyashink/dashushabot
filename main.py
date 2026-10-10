@@ -309,8 +309,8 @@ async def main() -> None:
     scheduler.add_job(
         remind_meeting,
         "cron",
-        hour=18,
-        minute=3,
+        hour=19,
+        minute=10,
         args=[bot],
         id="daily_meeting",
         replace_existing=True
