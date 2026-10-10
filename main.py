@@ -168,7 +168,7 @@ def start_repeating(bot: Bot, kind: str):
     scheduler.add_job(
         repeat_reminder,
         "interval",
-        seconds=15,  # для теста; потом поменяешь на 15 * 60
+        seconds=5 * 60,
         args=[bot, kind],
         id=f"repeat_{kind}",
         replace_existing=True
